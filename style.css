@@ -1,0 +1,129 @@
+:root{
+    --width-page: 1200px;
+    --nav-height: 120px;
+    --color1: #365D6C;
+    --color3: #8FD1DF;
+    --color2: #C2CCCB;
+    --color4: #798B95;
+}
+html {
+    scroll-behavior:smooth;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+header{
+    background-color: var(--color1) ;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top:0;
+}
+.main_nav{
+    max-width: var(--width-page);
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    height: var(--nav-height);
+    align-items: center;
+}
+
+.div__derecha, .menu{
+    display: flex;
+    list-style: none;
+}
+.menu__item a{
+    padding: 1rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--color2);
+}
+main {
+    margin: 0 auto;
+}
+.ancho__seccion{
+    max-width: var(--width-page);
+    margin: 0 auto;
+}
+.seccion1 {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    background-color: var(--color4);
+}
+.seccion2 {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+.seccion3 {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    background-color: var(--color4);
+}
+.seccion__imagen1 img{
+    border-radius: 60rem;
+    height: 15rem;
+    width: 15rem;
+}
+.div__izquierda h2 {
+    font-size: 1.5rem;
+    color: var(--color2);
+}
+.seccion__texto {
+    color: var(--color2);
+    text-align: center;
+}
+.seccion__titulo {
+    font-size: 3rem;
+    color: whitesmoke;
+}
+.seccion__texto h2 {
+    font-size: 1.5rem;
+    color: var(--color3);
+}
+.seccion__texto h3 {
+    font-size: 1.2rem;
+}
+.seccion__texto p {
+    font-size: 1rem;
+}
+.seccion__otro{
+    background-image: url(assets/img/fond.jpg) ;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.seccion__otro .seccion__texto{
+    color: whitesmoke;
+}
+
+.partes {
+    display: flex;
+    gap: 5rem;
+    color: var(--color2);
+    justify-content: space-around;
+}
+.partes__a{
+    width: 220px;
+}
+.partes__a p, .partes__a h2, .partes__a h3{
+    text-align: center;
+}
+
+.partes__a p{
+    font-size: 1rem;
+}
+.partes__a h2{
+    font-size: 1.5rem;
+    color: var(--color3);
+}
+.partes__a h3{
+    font-size: 1.2rem;
+}
